@@ -1,0 +1,16 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name  : k8s-test
+  region: eu-west-2
+
+
+nodeGroups:
+  - name             : worker1   # название воркера
+    instanceType     : t3.small  # указываем тип инстантов
+    desiredCapacity  : 2         # указываем количество воркеров
+
+  - name             : worker2    # название воркера
+    instanceType     : t3.small  # указываем тип инстантов
+    desiredCapacity  : 2         # указываем количество воркеров
