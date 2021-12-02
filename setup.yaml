@@ -14,4 +14,4 @@ nodeGroups:
   - name             : worker2    # название воркера
     instanceType     : t3.small   # указываем тип инстантов
     desiredCapacity  : 2          # указываем количество воркеров
-    privateNetworking: true       # включаем приватную сет
+    privateNetworking: true       # включаем приватную сеть
