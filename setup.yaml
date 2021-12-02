@@ -7,10 +7,11 @@ metadata:
 
 
 nodeGroups:
-  - name             : worker1   # название воркера
-    instanceType     : t3.small  # указываем тип инстантов
-    desiredCapacity  : 2         # указываем количество воркеров
+  - name             : worker1    # название воркера
+    instanceType     : t3.small   # указываем тип инстантов
+    desiredCapacity  : 2          # указываем количество воркеров
 
   - name             : worker2    # название воркера
-    instanceType     : t3.small  # указываем тип инстантов
-    desiredCapacity  : 2         # указываем количество воркеров
+    instanceType     : t3.small   # указываем тип инстантов
+    desiredCapacity  : 2          # указываем количество воркеров
+    privateNetworking: true       # включаем приватную сет
